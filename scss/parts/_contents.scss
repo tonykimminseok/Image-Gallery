@@ -1,0 +1,7 @@
+.gallery-container {
+  @include flex($just: center, $wrap: wrap);
+}
+
+// .child {
+//   flex: 1, 1, 25%;
+// }

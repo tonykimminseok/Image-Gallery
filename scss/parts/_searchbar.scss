@@ -1,0 +1,40 @@
+.searchbar-container input {
+  @extend %searchbar;
+  @extend %transitions;
+
+  &:hover {
+    @extend %searchbartransition;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  &:focus {
+    @extend %searchbartransition;
+    outline: none;
+
+    &::placeholder {
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+  @include mq(small) {
+    width: 200px;
+  }
+
+  @include mq(medium) {
+    width: 400px;
+  }
+
+  @include mq(large) {
+    width: 670px;
+  }
+
+}
+
+.no-results {
+  text-decoration: none;
+  pointer-events: none;
+}

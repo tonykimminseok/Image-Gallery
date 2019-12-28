@@ -1,0 +1,58 @@
+// alphabetical order
+
+%a {
+  margin: 2em;
+}
+
+%buttons-close {
+  position: relative;
+  margin: 0 auto;
+  top: -120px;
+  z-index: 2;
+}
+
+%buttons-nav {
+  margin: 0;
+  opacity: 0.5;
+  width: 20%;
+  background-size: 30px;
+}
+
+%img {
+  display: block;
+  margin: 0 auto;
+}
+
+%lb-details {
+  margin-top: 2em;
+  width: 100%;
+  max-height: 48px;
+}
+
+%searchbar {
+  height: 40px;
+
+  margin: 3.3em 0;
+  padding-left: 1.5em;
+
+  border: 1px solid lighten(grey, 10%);
+  border-radius: .5em;
+}
+
+%searchbartransition {
+  background-color: lighten(#6195ED, 12%);
+  opacity: .65;
+  transform: scale(1.1);
+}
+
+%transitions {
+  transition: all, $tr-time;
+}
+
+%wrapper {
+  max-width: $max-width;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 4em;
+}

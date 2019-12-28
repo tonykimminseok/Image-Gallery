@@ -1,0 +1,78 @@
+.lb-nav a.lb-next,
+.lb-nav a.lb-prev {
+  @extend %buttons-nav;
+
+  @include mq(medium) {
+    background-size: 40px;
+  }
+
+  @include mq(large) {
+    background-size: 50px;
+  };
+}
+
+.lb-nav a.lb-prev {
+
+  @include mq(medium) {
+    transform: translateX(15%);
+  }
+
+  @include mq(large) {
+    transform: translateX(-70%);
+  }
+}
+
+.lb-nav a.lb-next {
+
+  @include mq(medium) {
+    transform: translateX(-15%);
+  }
+
+  @include mq(large) {
+    transform: translateX(70%);
+  }
+}
+
+.lb-data .lb-caption {
+  font-size: .9em;
+  font-weight: lighter;
+
+  @include mq(medium) {
+    font-size: 1.1em;
+  }
+
+  @include mq(large) {
+    font-size: 1.3em;
+  }
+}
+
+.lb-number {
+  font-weight: bolder;
+}
+
+.lb-data .lb-details {
+  @extend %lb-details;
+}
+
+.lb-nav {
+  z-index: 1;
+}
+
+.lb-data .lb-close {
+  @extend %buttons-close;
+
+  @include mq(small) {
+    background-size: 15px;
+    right: 15px;
+  }
+
+  @include mq(medium) {
+    background-size: 22.5px;
+    right: 7px;
+  }
+}
+
+.lightbox .lb-image {
+  border: 2px solid lighten(rgb(201, 156, 21), 15%);
+  outline: 2px solid lighten(rgb(89, 49, 17), 15%);
+}
